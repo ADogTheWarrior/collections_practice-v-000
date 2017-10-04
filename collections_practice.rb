@@ -16,6 +16,14 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
+  if array.length < 3
+    return array
+  else
+    placeholder = array[1]
+    array[1] = array[2]
+    array[2] = placeholder
+    return array
+  end
 end
 
 def reverse_array(array)
